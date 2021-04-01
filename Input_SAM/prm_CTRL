@@ -1,0 +1,86 @@
+ &PARAMETERS
+
+ caseid ='120x120x512_35m_DRZ_RRTM_N100',
+
+ nrestart = 0,
+
+ OCEAN = .true.,
+! doseawater = .true.,
+
+ ug = -2.,
+ vg = -7.,
+
+ dosgs		= .true.,
+ dodamping 	= .true.,
+ doupperbound  	= .true.,
+ docloud 	= .true.,
+ doprecip 	= .true., 
+ doradsimple    = .false.,
+ dolongwave	= .true.,
+ doshortwave	= .true.,
+ dosurface 	= .true.,
+ dolargescale 	= .true.,
+ doradforcing   = .false.,
+ dosfcforcing   = .true.,
+ docoriolis 	= .true.,
+ donudging_uv   = .false.,
+ donudging_tq   = .false.,
+
+ doperpetual     = .true.
+ dosolarconstant = .true.
+ solar_constant  = 1367.
+ zenith_angle    = 68.72
+
+ SFC_FLX_FXD    = .false.,
+ SFC_TAU_FXD    = .false.,
+
+ perturb_type   = 6,
+
+ nrad = 20,
+
+ dx = 	35.,
+ dy = 	35.,
+
+ ncycle_max = 30,
+ dt = 3.0, 
+
+ latitude0 = 34.,
+ longitude0 = -25.,
+
+ day0=165.,
+
+ doSCAMiopdata = .true.,
+ dozero_out_day0 = .false.,
+! iopfile = 'astex_2010_v3a_SCAMIOP.nc',
+ iopfile = 'astex_input_Tadv_-2.6.nc',
+
+ nstop    = 108000,
+ nprint   = 1200,
+ nstat    = 1200,
+ nstatfrq = 120,
+ nrestart_skip = 3600,
+
+ doSAMconditionals = .true.,
+ dosatupdnconditionals = .true.,
+
+ nsave2D	= 1200,
+ nsave2Dstart	= 600,
+ nsave2Dend	= 108000,
+ save2Dbin      = .true.,
+
+ nsave3D	= 6000,
+ nsave3Dstart	= 600,
+ nsave3Dend	= 108000,
+ save3Dbin      = .true.,
+/ 
+
+ &SGS_TKE
+ dosmagor = .false.,
+/
+
+ &MICRO_DRIZZLE
+ Nc0 = 100.,
+ sigmag = 1.2,
+/
+
+
